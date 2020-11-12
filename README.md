@@ -1,2 +1,2 @@
-# API-6319-
+# API_6319
 Advanced Quantitative Research Method
