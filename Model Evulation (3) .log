@@ -1,0 +1,75 @@
+---------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/erin/Desktop/Untitled.log
+  log type:  text
+ opened on:   6 Dec 2020, 20:15:50
+
+. logit FS ib5.INCDGHH ib3.EHG2DVH3 i.Income_source i.DHH_OWN ib2.gender_loneparent ib3.SMK_005 ib3.ALCDVTTM ib2.SDC_015 i.SDCDGCB if I
+> NCDGHH>3,allbaselevel 
+
+Iteration 0:   log likelihood = -7966.5508  
+Iteration 1:   log likelihood = -7594.2485  
+Iteration 2:   log likelihood = -7166.7479  
+Iteration 3:   log likelihood =  -7163.063  
+Iteration 4:   log likelihood =   -7163.05  
+Iteration 5:   log likelihood =   -7163.05  
+
+Logistic regression                             Number of obs     =     38,083
+                                                LR chi2(15)       =    1607.00
+                                                Prob > chi2       =     0.0000
+Log likelihood =   -7163.05                     Pseudo R2         =     0.1009
+
+------------------------------------------------------------------------------------------------------------------------------
+                                                          FS |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------------------------------------------------------+----------------------------------------------------------------
+                                                     INCDGHH |
+                                         $60,000 to $79,999  |   .6947375   .0503913    13.79   0.000     .5959724    .7935026
+                                            $80,000 or more  |          0  (base)
+                                                             |
+                                                    EHG2DVH3 |
+                      Less than secondary school graduation  |   .2883604   .1087839     2.65   0.008     .0751479    .5015728
+   Secondary school graduation, no post-secondary education  |   .1838493    .064065     2.87   0.004     .0582842    .3094144
+          Post-secondary certificate diploma or univ degree  |          0  (base)
+                                                             |
+                                               Income_source |
+                                Wages and Employment Income  |          0  (base)
+      EI Work Compensation and Provincial Social Assistance  |   .3151108   .2338703     1.35   0.178    -.1432665    .7734881
+                                                    Pension  |   -1.47226   .1084776   -13.57   0.000    -1.684872   -1.259647
+                                              Child Benefit  |  -.6600846   .1534704    -4.30   0.000     -.960881   -.3592882
+                                                             |
+                                                     DHH_OWN |
+Owned by member of hhld, even if it is still being paid for  |          0  (base)
+                       Rented, even if no cash rent is paid  |   .7940162   .0534806    14.85   0.000     .6891961    .8988363
+                                                             |
+                                           gender_loneparent |
+                                           male lone-parent  |   .5037092     .14981     3.36   0.001      .210087    .7973315
+                                             Single&Married  |          0  (base)
+                                         Female lone-parent  |   .7877531   .0944447     8.34   0.000     .6026449    .9728613
+                                                             |
+                                                     SMK_005 |
+                                                      Daily  |   .8657815   .0569931    15.19   0.000      .754077     .977486
+                                               Occasionally  |   .5769598   .0957931     6.02   0.000     .3892088    .7647108
+                                                 Not at all  |          0  (base)
+                                                             |
+                                                    ALCDVTTM |
+                                            Regular drinker  |  -.2064563   .0722935    -2.86   0.004    -.3481489   -.0647636
+                                         Occasional drinker  |   .2161577    .084762     2.55   0.011     .0500273    .3822882
+                        Did not drink in the last 12 months  |          0  (base)
+                                                             |
+                                                     SDC_015 |
+                                                        Yes  |   .7994587   .0765351    10.45   0.000     .6494526    .9494647
+                                                         No  |          0  (base)
+                                                             |
+                                                     SDCDGCB |
+                                                     Canada  |          0  (base)
+                                                      Other  |    .047119   .1697044     0.28   0.781    -.2854955    .3797335
+                                                             |
+                                                       _cons |  -3.288365    .073768   -44.58   0.000    -3.432948   -3.143783
+------------------------------------------------------------------------------------------------------------------------------
+
+. log close
+      name:  <unnamed>
+       log:  /Users/erin/Desktop/Untitled.log
+  log type:  text
+ closed on:   6 Dec 2020, 20:16:02
+---------------------------------------------------------------------------------------------------------------------------------------
